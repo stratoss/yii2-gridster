@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist fedemotta/yii2-gridster "*"
+php composer.phar require --prefer-dist stratoss/yii2-gridster "*"
 ```
 
 or add
 
 ```
-"fedemotta/yii2-gridster": "*"
+"stratoss/yii2-gridster": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,7 +28,7 @@ Usage
 Use Gridster.js as any other other Yii2 widget.
 
 ```php
-use fedemotta\gridster\Gridster;
+use stratoss\gridster\Gridster;
 ```
 
 ```php
@@ -67,7 +67,7 @@ You can also use Gridster.js in the JavaScript layer of your application. To ach
 ```php
 public $depends = [
 ...
-'fedemotta\gridster\GridsterAsset',
+'stratoss\gridster\GridsterAsset',
 ...
 ];
 ```
