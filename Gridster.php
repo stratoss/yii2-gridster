@@ -146,7 +146,7 @@ class Gridster extends Widget
       }
   })
 EXTEND;
-        $view->registerJs("jQuery('#$id $this->subTag').gridster($.extend({$toExtend},$options);");
+        $view->registerJs("jQuery('#$id $this->subTag').gridster($.extend($options,$toExtend);");
         echo self::endContainer($this->tag,$this->subTag);
     }
 }
