@@ -131,7 +131,22 @@ class Gridster extends Widget
         $namespace =  ["namespace" => "#$id"];
         $options = !empty($this->clientOptions) ? Json::encode(array_merge($namespace,$this->clientOptions)) : Json::encode($namespace);
         GridsterAsset::register($view);
-        $view->registerJs("jQuery('#$id $this->subTag').gridster($options);");
+        $toExtend = <<<EXTEND
+{
+      serialize_params: function (\$w, wgd) {
+          return {
+              /* add element ID to data*/
+              id: \$w.attr('id'),
+              /* defaults */
+              col: wgd.col,
+              row: wgd.row,
+              size_x: wgd.size_x,
+              size_y: wgd.size_y
+          }
+      }
+  })
+EXTEND;
+        $view->registerJs("jQuery('#$id $this->subTag').gridster($.extend({$toExtend},$options);");
         echo self::endContainer($this->tag,$this->subTag);
     }
 }
