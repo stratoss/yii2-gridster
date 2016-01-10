@@ -1,5 +1,5 @@
 {
-    "name": "fedemotta/yii2-gridster",
+    "name": "stratoss/yii2-gridster",
     "description": "Gridster.js widget for Yii2",
     "type": "yii2-extension",
     "minimum-stability": "stable",
@@ -10,6 +10,10 @@
         "source": "https://github.com/fedemotta/yii2-gridster"
     },
     "authors": [
+        {
+            "name": "Stanimir Stoyanov",
+            "email": "stanimir@datacentrix.org"
+        },
         {
             "name": "Federico Nicolás Motta",
             "email": "fedemotta@gmail.com"
