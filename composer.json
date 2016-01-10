@@ -6,8 +6,8 @@
     "keywords": ["yii2","extension","gridster","gridster.js","drag-and-drop","multi-column","jQuery","grid","plugin"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/fedemotta/yii2-gridster/issues?state=open",
-        "source": "https://github.com/fedemotta/yii2-gridster"
+        "issues": "https://github.com/stratoss/yii2-gridster/issues?state=open",
+        "source": "https://github.com/stratoss/yii2-gridster"
     },
     "authors": [
         {
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "fedemotta\\gridster\\": ""
+            "stratoss\\gridster\\": ""
         }
     },
     "extra": {
