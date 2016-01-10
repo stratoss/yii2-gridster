@@ -5,7 +5,7 @@
  * @license http://opensource.org/licenses/mit-license.php The MIT License (MIT)
  * @package yii2-gridster
  */
-namespace fedemotta\gridster;
+namespace stratoss\gridster;
 
 use yii\base\InvalidCallException;
 use yii\base\Widget;
