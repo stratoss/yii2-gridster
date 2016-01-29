@@ -44,7 +44,7 @@ class Gridster extends Widget
     public $clientOptions = [];
     
     /**
-     * @var the gridster widgets that are currently active
+     * @var array the gridster widgets that are currently active
      */
     private $_widgets = [];
     
